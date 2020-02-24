@@ -10,7 +10,7 @@ end
 
 gem 'rails', '4.1.12'
 gem 'activerecord-deprecated_finders'
-gem 'activerecord-session_store'
+gem 'activerecord-session_store', '>= 0.1.0'
 gem "nested_form"
 
 # Specify a sprockets version due to security issue
@@ -31,7 +31,7 @@ gem 'settingslogic'
 gem "unicorn", "~> 4.8.2"
 
 # Haml
-gem 'haml-rails','~> 0.5.3'
+gem 'haml-rails', '~> 0.5.3'
 
 # Background jobs
 gem 'slim'
@@ -74,20 +74,20 @@ gem 'hipchat', '~> 1.5.0'
 gem 'attr_encrypted', '1.3.4'
 
 # Other
-gem 'rake'
+gem 'rake', '>= 12.3.3'
 gem 'foreman'
 gem 'request_store'
 gem 'jquery-rails', '~> 3.1.3'
 gem 'gitlab_ci_meta', '~> 4.0'
 
-gem 'sass-rails',   '~> 4.0.5'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 4.0.5'
+gem 'coffee-rails', '~> 4.0.1'
 
 gem 'uglifier', '>= 1.0.3'
 gem 'bootstrap-sass', '~> 3.0'
-gem "font-awesome-rails", '~> 3.2'
-gem 'turbolinks'
-gem 'jquery-turbolinks'
+gem "font-awesome-rails", "~> 3.2", ">= 3.2.1.3"
+gem 'turbolinks', '>= 2.0.0'
+gem 'jquery-turbolinks', '>= 2.0.1'
 gem 'nprogress-rails'
 
 # Soft deletion
@@ -103,9 +103,9 @@ gem "unf"
 
 group :development do
   gem 'brakeman', require: false
-  gem 'annotate'
+  gem 'annotate', '>= 2.6.0'
   gem "letter_opener"
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.0.2'
   gem 'rack-mini-profiler', require: false
 end
 
@@ -116,8 +116,8 @@ group :development, :test do
   gem 'pry-rails'
 
   gem "database_cleaner", '~> 1.4.0'
-  gem 'factory_girl_rails'
-  gem 'rspec-rails',      '~> 3.3.0'
+  gem 'factory_girl_rails', '>= 4.3.0'
+  gem 'rspec-rails', '~> 3.3.2'
   gem 'rubocop',          '0.28.0', require: false
 
   gem 'capybara',            '~> 2.4.0'
